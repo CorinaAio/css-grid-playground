@@ -1,0 +1,35 @@
+.banner {
+	display: grid;
+	column-gap: 20px;
+	grid-template: "title / img / description";
+	
+	&-image {
+		grid-area: 'img';
+		max-height: 350px;
+	}
+
+	&-title {
+		grid-area: 'title';
+	}
+
+	&-description {
+		grid-area: 'description';
+	}
+}
+
+@media(min-width: 640px) {
+	.banner {
+		grid-template-columns: 1fr 3fr;
+		grid-template-rows: [line-1] 100px [line-2] auto [line-3];
+
+		&-image {
+			grid-row-start: line-1 /span 2;
+			max-height: 250px;
+		}
+
+		&-description {
+			grid-row: line-2;
+			grid-column: 2;
+		}
+	}
+}
