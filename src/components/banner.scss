@@ -6,6 +6,7 @@
 	&-image {
 		grid-area: 'img';
 		max-height: 350px;
+		justify-self: center;
 	}
 
 	&-title {
@@ -21,6 +22,7 @@
 	.banner {
 		grid-template-columns: 1fr 3fr;
 		grid-template-rows: [line-1] 100px [line-2] auto [line-3];
+		margin: 0 50px;
 
 		&-image {
 			grid-row-start: line-1 /span 2;

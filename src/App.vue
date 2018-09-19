@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Banner v-bind="bannerData" />
+    <v-banner v-bind="bannerData">
+    	<p>buttons</p>
+    </v-banner>
   </div>
 </template>
 
@@ -11,7 +13,7 @@ import './app.scss';
 export default {
   name: 'app',
   components: {
-    Banner
+    'v-banner': Banner
   },
   data: () => {
   	return {
