@@ -3,7 +3,7 @@
 	flex-direction: column;
 	
 	button {
-		margin: 10px;
+		margin: 5px 0;
 		background: #8e5577;
 		min-width: 200px;
 		border-radius: 2px;
@@ -23,9 +23,9 @@
 	@media (min-width: 640px) {
 		flex-direction: row;
 		justify-content: center;
-	}
 
-	.button {
-		margin: 10px 0;
+		button {
+			margin: 0 10px;
+		}
 	}
 }

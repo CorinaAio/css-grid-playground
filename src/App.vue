@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-	  <Example1 />
+	  <!--<Example1 />-->
+	  <Example2 />
   </div>
 </template>
 
 <script>
-import Example1 from './examples/Example1.vue'
+import Example1 from './examples/example1/Example1.vue';
+import Example2 from './examples/example2/Example2.vue';
+
 import './app.scss';
 
 export default {
   name: 'app',
   components: {
-  	Example1
+  	Example1,
+  	Example2,
   }
 }
 </script>

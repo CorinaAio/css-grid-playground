@@ -1,19 +1,17 @@
 <template>
-  <div id="app">
     <v-banner v-bind="bannerData">
     	<div class="button-group" slot="buttons">
-	    	<button>Button1</button>
-	    	<button class="secondary">Button2</button>
+	    	<button>Click for seeds</button>
+	    	<button class="secondary">Go back to cage</button>
     	</div>
     </v-banner>
-  </div>
 </template>
 
 <script>
-import Banner from '../components/Banner.vue'
+import Banner from '../../components/Banner.vue';
 
 export default {
-  name: 'Example1',
+  name: 'Example2',
   components: {
     'v-banner': Banner
   },
