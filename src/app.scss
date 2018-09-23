@@ -1,3 +1,31 @@
-body {
-	/*background-color: yellow;*/
+.button-group {
+	display: flex;
+	flex-direction: column;
+	
+	button {
+		margin: 10px;
+		background: #8e5577;
+		min-width: 200px;
+		border-radius: 2px;
+		color: #fff;
+		height: 40px;
+		padding: 5px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+
+		&.secondary {
+			background: #dbd4d8;
+			color: #343434;
+		}
+	}
+
+	@media (min-width: 640px) {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.button {
+		margin: 10px 0;
+	}
 }

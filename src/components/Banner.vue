@@ -3,7 +3,9 @@
   	<img class="banner-image" :src="image">
   	<h1 class="banner-title">{{title}}</h1>
   	<p class="banner-description">{{description}}</p>
-  	<slot></slot>
+  	<div class="banner-slot">
+	  	<slot name="buttons"></slot>
+	</div>
   </div>
 </template>
 

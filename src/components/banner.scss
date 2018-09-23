@@ -1,7 +1,6 @@
 .banner {
 	display: grid;
 	column-gap: 20px;
-	grid-template: "title / img / description";
 	
 	&-image {
 		grid-area: 'img';
@@ -15,6 +14,10 @@
 
 	&-description {
 		grid-area: 'description';
+	}
+
+	&-slot {
+		grid-area: 'slot';
 	}
 }
 
@@ -32,6 +35,11 @@
 		&-description {
 			grid-row: line-2;
 			grid-column: 2;
+		}
+
+		&-slot {
+			grid-column-start: 2;
+			grid-row-start: 3;
 		}
 	}
 }
