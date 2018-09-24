@@ -6,8 +6,9 @@
 		"title"
 		"img"
 		"description"
-		"slot";
-	
+		"slot"
+		"advertisment";
+
 	&-image {
 		grid-area: img;
 		max-height: 350px;
@@ -49,7 +50,6 @@
 
 @media(min-width: 640px) {
 	.banner {
-		grid-template-columns: 1fr 3fr;
 		grid-template-rows: [line-1] 100px [line-2] auto [line-3];
 		grid-auto-rows: auto;
 		margin: 0 50px;
